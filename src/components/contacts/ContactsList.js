@@ -2,7 +2,7 @@ import ContactCard from "./ContactCard"
 
 const ContactList = ({ contacts=[] }) => {
     return (
-        <div>
+        <div style={{backgroundColor: "rgb(196, 196, 196)"}}>
             {contacts.map((contact) => 
                 <ContactCard 
                     key={contact.id}

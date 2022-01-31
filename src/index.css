@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.contactCard {
+  border: 1px solid grey;
+  margin: 5% 10%;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+.infoContainer {
+  display: flex;
+}
+
+.info {
+  border-left: 1px solid rgb(196, 196, 196);
+  height: fit-content;
+  margin-left: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.infoDetail {
+  color: rgb(120, 120, 120);
+  font-weight: 800;
+  margin: 0;
+}
