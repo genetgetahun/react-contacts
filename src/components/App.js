@@ -5,6 +5,7 @@ import ContactsPage from "./contacts";
 import ContactDetailsPage from "./contact-details";
 import ContactCreatePage from "./contact-create";
 import { getContacts } from "../utils/contacts";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 const mockContacts = [
   {
@@ -46,6 +47,7 @@ const mockContacts = [
 ];
 
 
+
 class App extends React.Component {
 
   constructor(props) {
@@ -73,6 +75,9 @@ class App extends React.Component {
         <ContactDetailsPage contact={this.state.contacts[0]} />
         <ContactCreatePage />
       </div>
+
+
+
     );
   }
 }

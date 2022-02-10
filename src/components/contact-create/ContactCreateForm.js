@@ -1,4 +1,5 @@
 import React from "react";
+import{Form,Input ,AvatarImage, Button1 }from '../Style'
 
 class ContactCreateForm extends React.Component {
     
@@ -30,13 +31,13 @@ class ContactCreateForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleFormSubmit}>
+            <Form onSubmit={this.handleFormSubmit}>
                 <div>
-                    <img src={this.state.profilePic} alt="Profile preview." />
+                    <AvatarImage src={this.state.profilePic} alt="Profile preview." />
                 </div>
                 <div>
                     <div>
-                        <input
+                        <Input
                             type="text"
                             placeholder="First Name"
                             name="firstName"
@@ -45,7 +46,7 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <Input
                             type="text"
                             placeholder="Last Name"
                             name="lastName"
@@ -54,7 +55,7 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <Input
                             type="tel"
                             placeholder="Phone Number"
                             name="phoneNumber"
@@ -63,7 +64,7 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <Input
                             type="email"
                             placeholder="Email"
                             name="email"
@@ -72,7 +73,7 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <Input
                             type="text"
                             placeholder="Address"
                             name="address"
@@ -81,7 +82,7 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <input
+                        <Input
                             type="text"
                             placeholder="Profile Picture Url"
                             name="profilePic"
@@ -90,10 +91,10 @@ class ContactCreateForm extends React.Component {
                         />
                     </div>
                     <div>
-                        <button type="submit">Add Contact</button>
+                        <Button1 type="submit">Add Contact</Button1>
                     </div>
                 </div>
-            </form>
+            </Form>
         )
     }
 }
